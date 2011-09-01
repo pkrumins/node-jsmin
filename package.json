@@ -17,21 +17,23 @@
            "email": "peteris.krumins@gmail.com",
            "web": "http://www.catonmat.net",
            "twitter": "pkrumins"
-       } 
+       }
    ],
    "licenses": [
        {
            "type": "Doug Crockford's license that allows this module to be used for Good but not for Evil"
-       } 
+       }
    ],
    "repositories": [
        {
            "type": "git",
-           "url": "http://github.com/pkrumins/node-jsmin.git" 
-       } 
+           "url": "http://github.com/pkrumins/node-jsmin.git"
+       }
    ],
    "engines": {
        "node": ">=0.1.93"
+   },
+   "bin" : {
+       "jsmin" : "./bin/jsmin"
    }
 }
-

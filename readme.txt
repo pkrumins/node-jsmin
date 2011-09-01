@@ -38,6 +38,41 @@ Output:
 
     'function hello(a,b,c){sys.log(a+b+c)}'
 
+
+Command-line Usage
+------------------
+
+Installing globally (using npm's -g flag) will also install a command-line
+tool for using jsmin:
+
+    jsmin [OPTIONS...] [FILENAME]
+
+The input filename should be the last argument. If you don't specify it,
+input will be read from STDIN instead.
+
+Supported options:
+
+    -o FILENAME
+    --output FILENAME
+
+        Specifies an output file for minified output. If not given, output
+        will be written to STDOUT.
+
+    -l LEVEL
+    --level LEVEL
+
+        Sets the aggressiveness level to be used.
+
+    -c COMMENT
+    --comment COMMENT
+
+        Sets a comment to be prepended to the output.
+
+    --overwrite
+
+        If provided and an input filename was provided (rather than using
+        STDIN), output will be written to the same file input was read from.
+
 ------------------------------------------------------------------------------
 
 Have fun jsminning!
