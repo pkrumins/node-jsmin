@@ -30,13 +30,13 @@ Example
 -------
 
     var jsmin = require('./jsmin').jsmin;
-    var sys = require('sys');
+    var util = require('util');
 
-    sys.puts(jsmin('function    hello( a , b , c ) {   sys.log(a + b + c) }'))
+    util.puts(jsmin('function    hello( a , b , c ) {   util.log(a + b + c) }'))
 
 Output:
 
-    'function hello(a,b,c){sys.log(a+b+c)}'
+    'function hello(a,b,c){util.log(a+b+c)}'
 
 
 Command-line Usage
